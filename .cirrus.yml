@@ -1,0 +1,14 @@
+alpine_task:
+  name: Build (Alpine Linux)
+  container:
+    image: alpine:3.19
+  install_script:
+    - echo 'https://dl-cdn.alpinelinux.org/alpine/edge/main' > /etc/apk/repositories
+    - echo 'https://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories
+    - echo 'https://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories
+    - apk update && apk upgrade --available
+    - apk add --no-cache gleam erlang nodejs
+  test_script:
+    - gleam test
+    - gleam test --target javascript
+    - gleam format --check src test
