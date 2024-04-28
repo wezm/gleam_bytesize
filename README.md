@@ -1,6 +1,6 @@
 # bytesize
 
-[![Build Status](https://api.cirrus-ci.com/github/wezm/bytesize.svg)](https://cirrus-ci.com/github/wezm/bytesize)
+[![Build Status](https://api.cirrus-ci.com/github/wezm/gleam_bytesize.svg)](https://cirrus-ci.com/github/wezm/gleam_bytesize)
 [![Package Version](https://img.shields.io/hexpm/v/bytesize)](https://hex.pm/packages/bytesize)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/bytesize/)
 ![Hex.pm License](https://img.shields.io/hexpm/l/bytesize)
