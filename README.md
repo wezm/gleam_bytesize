@@ -6,11 +6,13 @@
 ```sh
 gleam add bytesize
 ```
+
 ```gleam
 import bytesize
 
 pub fn main() {
-  // TODO: An example of the project in use
+  let s = bytesize.b(10_485_760)
+  |> bytesize.to_string // "10.0 MiB"
 }
 ```
 
@@ -19,7 +21,6 @@ Further documentation can be found at <https://hexdocs.pm/bytesize>.
 ## Development
 
 ```sh
-gleam run   # Run the project
 gleam test  # Run the tests
-gleam shell # Run an Erlang shell
 ```
+
